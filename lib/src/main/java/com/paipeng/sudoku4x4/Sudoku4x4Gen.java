@@ -7,13 +7,15 @@ public class Sudoku4x4Gen {
     public void test() {
         Sudoku4x4 sudoku4x4 = new Sudoku4x4();
 
-        sudoku4x4.dummy();
+        //sudoku4x4.dummy();
 
-        System.out.println(sudoku4x4.toString());
+        //System.out.println(sudoku4x4);
 
         sudoku4x4.reset();
-        sudoku4x4.genRandom();
-        System.out.println(sudoku4x4.toString());
+        sudoku4x4.genRandom(2);
+        System.out.println(sudoku4x4);
+
+        System.out.println(sudoku4x4.getGivenNumberString());
 
         if (sudoku4x4.validate()) {
             System.out.println("valid sudoku");
